@@ -1,0 +1,75 @@
+@use '@angular/material' as mat;
+@import '../node_modules/@angular/material/theming';
+
+@include mat.core();
+
+$chriskobb-p-dark: (
+  50 : #e0f5f7,
+  100 : #b3e6ec,
+  200 : #80d5df,
+  300 : #4dc4d2,
+  400 : #26b8c9,
+  500 : #00abbf,
+  600 : #00a4b9,
+  700 : #009ab1,
+  800 : #0091a9,
+  900 : #00809b,
+  A100 : #c6f3ff,
+  A200 : #93e9ff,
+  A400 : #60dfff,
+  A700 : #47daff,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #000000,
+    400 : #000000,
+    500 : #ffffff,
+    600 : #ffffff,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #000000,
+    A700 : #000000,
+  )
+);
+
+$chriskobb-a-dark: (
+  50 : #f7e3e0,
+  100 : #ecb8b3,
+  200 : #df8980,
+  300 : #d25a4d,
+  400 : #c93626,
+  500 : #bf1300,
+  600 : #b91100,
+  700 : #b10e00,
+  800 : #a90b00,
+  900 : #9b0600,
+  A100 : #ffc7c6,
+  A200 : #ff9493,
+  A400 : #ff6160,
+  A700 : #ff4847,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #ffffff,
+    400 : #ffffff,
+    500 : #ffffff,
+    600 : #ffffff,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #000000,
+    A700 : #ffffff,
+  )
+);
+
+$chriskobb-palette-primary-dark: mat.define-palette($chriskobb-p-dark);
+$chriskobb-palette-accent-dark: mat.define-palette($chriskobb-a-dark);
+
+$chriskobb-theme-dark: mat.define-dark-theme($chriskobb-palette-primary-dark, $chriskobb-palette-accent-dark);
