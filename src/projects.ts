@@ -20,8 +20,9 @@ export const projects: any[] = [
     name: 'Commander Recommendation Application',
     summary: 'Angular CLI app for recommending EDH Commanders',
     description: '<p>Angular web application for recommending EDH Commanders to build. Uses market-basket analysis on user submitted' +
-      ' decks and find external decks with the greatest commonality. Stores data in a Postgres db accessible with a custom made API.</p>',
-    thumbnail: 'assets/thumbnails/commanderdash.png',
+      ' decks to find external decks with the greatest commonality. Stores data in a Postgres db accessible with a custom made API.</p>',
+    //thumbnail: 'assets/thumbnails/commanderdash.png',
+    thumbnail: 'assets/projects/commanderdash/commanderdash-decklist.png',
     images: [
       'assets/projects/commanderdash/commanderdash-decklist.png',
       'assets/projects/commanderdash/commanderdash-edit.png',
@@ -47,7 +48,8 @@ export const projects: any[] = [
     summary: 'A home server running Proxmox',
     description: '<p>A Dell r710 running Proxmox hosting 14 VMs and over 30 Docker containers. Routes home internet using pfSense. ' +
       'Hosts a BitWarden password manager, BookStacks wiki, NextCloud storage, and a set of DBMS\'s.</p>',
-    thumbnail: 'assets/thumbnails/proxmox_thumbnail.png',
+    //thumbnail: 'assets/thumbnails/proxmox_thumbnail.png',
+    thumbnail: 'assets/projects/homelab/proxmox_screen.png',
     images: [
       'assets/projects/homelab/proxmox_screen.png',
       'assets/projects/homelab/portainer_screen.png',
@@ -65,11 +67,11 @@ export const projects: any[] = [
     images: [],
     source: '',
   },
-  /*  {
+  {
       id: 5,
       name: 'Home Dashboard',
       summary: 'Custom home dashboard.',
-      description: '<p>A home dashboard written with Angular and NodeJS, integrating with service APIs and running custom Node APIs for ' +
+      description: '<p>A home dashboard written with Angular and NodeJS, integrating with service APIs and running custom Node.js APIs for ' +
         'TCP service pings and reading log files.</p>',
       thumbnail: 'assets/thumbnails/dashboard_thumb.png',
       images: [
@@ -80,7 +82,7 @@ export const projects: any[] = [
         'assets/projects/dashboard/dashboard-5.png',
       ],
       source: '',
-    },*/
+    },
   {
     id: 6,
     name: '3D Printers',
@@ -92,7 +94,7 @@ export const projects: any[] = [
       '<li>An Ender 5 dual extruder mod running Marlin</li>' +
       '<li>A Qidi X-Smart with glass bed mod and custom cooling ducts</li>' +
       '</ul>',
-    thumbnail: 'assets/thumbnails/printer_thumb.png',
+    thumbnail: 'assets/projects/printer/merc_one_enclosed.jpg',
     images: [
       'assets/projects/printer/merc_one_enclosed.jpg',
       'assets/projects/printer/ender_3.jpg',
@@ -118,17 +120,17 @@ export const projects: any[] = [
     ],
     source: '',
   },
-  /*  {
+  {
       id: 8,
       name: 'M.A.M.E.',
       summary: 'Multiple Arcade Machine Emulator',
       description: '<p>A Raspberry Pi 3 based arcade emulator running RetroPie, with custom side panels, housing, ' +
         'and splash screen. Wired in functional buttons and joysticks, with USB controller support as well.</p>',
-      thumbnail: 'assets/thumbnails/mame_thumb.png',
+      thumbnail: 'assets/projects/mame/mame.png',
       images: ['assets/projects/mame/mame.png'],
       source: '',
-    },*/
-  {
+    },
+ /* {
     id: 9,
     name: 'Angular WebApp',
     summary: 'Node.js & Angular Web Server',
@@ -136,5 +138,5 @@ export const projects: any[] = [
     thumbnail: 'assets/thumbnails/web_thumb.png',
     images: [],
     source: 'https://github.com/sigiltenebrae/ckobb_angular',
-  },
+  },*/
 ];
