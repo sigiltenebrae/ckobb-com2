@@ -3,7 +3,7 @@
     <mat-toolbar color="primary">
       <div fxFlex fxLayout fxLayoutAlign="end">
         <button mat-icon-button (click)="sidenav.toggle()">
-          <mat-icon>close</mat-icon>
+          <fa-icon [icon]="faXmark" size="2x"></fa-icon>
         </button>
       </div>
     </mat-toolbar>
@@ -20,7 +20,7 @@
     <mat-toolbar color="primary" style="position: fixed; z-index: 100">
       <div fxHide.gt-xs>
         <button mat-icon-button (click)="sidenav.toggle()">
-          <mat-icon>menu</mat-icon>
+          <fa-icon [icon]="faBars" size="2x"></fa-icon>
         </button>
       </div>
       <div fxFlex fxHide.xs>
@@ -41,16 +41,17 @@
           (click)="toggleDarkTheme()"
           class="theme-toggle"
           aria-label="Toggle Dark Theme">
-          <mat-icon>{{ isDark ? "dark_mode" : "light_mode" }}</mat-icon>
+          <fa-icon [icon]="isDark ? faMoon: faSun" size="2x"></fa-icon>
         </button>
       </div>
       <div fxFlex fxLayout fxLayoutAlign="end" fxHide.gt-xs>
         <button
           mat-icon-button
+          style="font-family: sans-serif; !important;"
           (click)="toggleDarkTheme()"
           class="theme-toggle"
           aria-label="Toggle Dark Theme">
-          <mat-icon>{{ isDark ? "dark_mode" : "light_mode" }}</mat-icon>
+          <fa-icon [icon]="isDark ? faMoon: faSun" size="2x"></fa-icon>
         </button>
       </div>
     </mat-toolbar>

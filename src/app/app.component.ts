@@ -1,5 +1,6 @@
 import {Component, HostBinding, OnInit} from '@angular/core';
 import {OverlayContainer} from "@angular/cdk/overlay";
+import {faSun, faMoon, faBars, faXmark} from "@fortawesome/free-solid-svg-icons";
 
 @Component({
   selector: 'app-root',
@@ -10,6 +11,10 @@ export class AppComponent implements OnInit {
   title = 'chriskobb';
 
   public isDark = true;
+  faSun = faSun;
+  faMoon = faMoon;
+  faBars = faBars;
+  faXmark = faXmark;
 
   constructor(public overlayContainer: OverlayContainer) {}
 
@@ -33,4 +38,6 @@ export class AppComponent implements OnInit {
     this.overlayContainer.getContainerElement().classList.add(theme);
     this.componentCssClass = theme;
   }
+
+
 }

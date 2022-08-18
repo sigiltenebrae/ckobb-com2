@@ -26,6 +26,7 @@ import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { AppComponent } from './app.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
     MatToolbarModule,
     MatCardModule,
     MatRippleModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
