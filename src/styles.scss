@@ -122,20 +122,41 @@ html, body { padding: 0; margin: 0;}
   100% { clip-path: polygon(0 40%, 100% 0, 100% 0, 100% 60%, 0 100%, 0 100%); }
 }
 
-.project-viewer .project-name {
+.project-viewer .project-name,
+.project-viewer .project-name-centered {
   position: absolute;
-  top: 10px;
-  left: 20px;
   z-index: 3;
-  max-width: 290px;
-  text-align: left;
   text-decoration: underline;
 }
 
-.project-viewer .project-description {
+.project-viewer .project-name {
+  top: 10px;
+  left: 20px;
+  max-width: 290px;
+  text-align: left;
+}
+
+.project-viewer .project-name-centered {
+  top: 10px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.project-viewer .project-summary {
   position: absolute;
   bottom: 10px;
   right: 10px;
   z-index: 3;
   text-align: right;
+}
+
+.project-viewer .project-description {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  z-index: 3;
+  text-align: left;
+  margin: 20px;
+  pointer-events: none;
 }

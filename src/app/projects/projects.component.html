@@ -20,10 +20,11 @@
            (mouseenter)="project.hovered = true; project.unclose=false; project.unopen=false;"
            (mouseleave)="project.hovered=false; project.unclose=true; project.unopen=false;"
            src="{{project.thumbnail}}" alt="{{project.name}}">
-      <h3 class="project-name">
+      <h3 [ngClass]="{'project-name': !project.hovered, 'project-name-centered': project.hovered}">
         {{project.name}}
       </h3>
-      <p class="project-description">{{project.summary}}</p>
+      <p *ngIf="!project.hovered" class="project-summary">{{project.summary}}</p>
+      <div *ngIf="project.hovered" [innerHTML]="project.description" class="project-description"></div>
     </mat-card>
   </div>
 </div>

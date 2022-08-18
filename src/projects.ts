@@ -106,7 +106,7 @@ export const projects: any[] = [
     name: 'CAD Projects',
     summary: 'Misc Designs',
     description: '<p>Just a quick look at some of my designs. Most are upgrades for my printers, or ' +
-      'mods on others\' upgrades. For more information, check out my Thingiverse page <a href="https://www.thingiverse.com/sigiltenebrae/designs">here</a>.</p>',
+      'mods on others\' upgrades. For more information, check out my Thingiverse page.</p>',
     thumbnail: 'assets/thumbnails/cad_thumb.png',
     images: [
       'assets/projects/cad/deckbox.png',
