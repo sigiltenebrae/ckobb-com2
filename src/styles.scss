@@ -127,6 +127,7 @@ html, body { padding: 0; margin: 0;}
   position: absolute;
   z-index: 3;
   text-decoration: underline;
+  pointer-events: none;
 }
 
 .project-viewer .project-name {
@@ -149,6 +150,14 @@ html, body { padding: 0; margin: 0;}
   right: 10px;
   z-index: 3;
   text-align: right;
+  animation-name: fade-text-anim;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-text-anim {
+  0% {opacity: 0}
+  100% {opacity: 100%}
 }
 
 .project-viewer .project-description {
@@ -159,4 +168,15 @@ html, body { padding: 0; margin: 0;}
   text-align: left;
   margin: 20px;
   pointer-events: none;
+  animation-name: fade-text-anim;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.project-viewer .project-source-button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
