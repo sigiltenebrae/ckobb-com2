@@ -31,10 +31,10 @@
         <p *ngIf="!project.hovered" class="project-summary">{{project.summary}}</p>
         <div *ngIf="project.hovered" [innerHTML]="project.description" class="project-description"></div>
         <div *ngIf="project.hovered && project.source && project.source !== '' && project.source !== 'Thingiverse'" class="project-source-button" >
-          <button mat-raised-button color="primary"><a style="text-decoration: none; color: white" href="{{project.source}}" target="_blank">Source</a></button>
+          <a mat-raised-button color="primary" href="{{project.source}}" target="_blank">Source</a>
         </div>
         <div *ngIf="project.hovered && project.source && project.source === 'Thingiverse'" class="project-source-button" >
-          <button mat-raised-button color="primary"><a style="text-decoration: none; color: white" href="https://www.thingiverse.com/sigiltenebrae/designs" target="_blank">Thingiverse</a></button>
+          <a mat-raised-button color="primary" href="https://www.thingiverse.com/sigiltenebrae/designs" target="_blank">Thingiverse</a>
         </div>
       </mat-card>
     </div>
