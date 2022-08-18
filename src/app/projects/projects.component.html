@@ -1,8 +1,8 @@
 <div fxLayout="column">
-  <div fxFlex="100" fxLayout="row" fxLayoutAlign="center" style="margin: 20px">
+  <div fxFlexFill fxLayout="row" fxLayoutAlign="center" style="margin: 20px; min-width: 372px">
     <h3>Click a project for more information!</h3>
   </div>
-  <div fxFlex="100" fxLayout="row wrap" fxLayoutAlign="center" >
+  <div fxFlexFill fxLayout="row wrap" fxLayoutAlign="center" >
     <div *ngFor="let project of projects; let i = index" fxLayout="column">
       <mat-card (click)="project.hovered=true; project.unclose=true" class="project-viewer" matRipple [matRippleCentered]="false" [class.mat-elevation-z3]="true">
         <!--<div class="project-thumbnail-holder" [ngClass]="{
