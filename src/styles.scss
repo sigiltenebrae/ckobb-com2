@@ -78,11 +78,17 @@ html, body { padding: 0; margin: 0;}
   height: 372px;
 }
 
-.project-viewer .project-thumbnail-holder:hover {
+/*.project-viewer .project-thumbnail-holder:hover {
   animation-name: project-viewer-open-anim;
   animation-duration: 0.15s;
   animation-fill-mode: forwards;
-}
+}*/
+
+/*.project-viewer .project-thumbnail-holder:hover {
+  animation-name: project-viewer-open-anim;
+  animation-duration: 0.15s;
+  animation-fill-mode: forwards;
+}*/
 
 .project-viewer .project-thumbnail-back {
   opacity: 10%;
