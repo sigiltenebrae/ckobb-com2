@@ -14,6 +14,10 @@
            (mouseenter)="project.hovered = true; project.unclose=false; project.unopen=false;"
            (mouseleave)="project.hovered=false; project.unclose=true; project.unopen=false;"
            src="{{project.thumbnail}}" alt="{{project.name}}">
+      <h3 class="project-name">
+        {{project.name}}
+      </h3>
+      <p class="project-description">{{project.summary}}</p>
     </mat-card>
   </div>
 </div>

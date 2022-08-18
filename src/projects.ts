@@ -2,7 +2,7 @@ export const projects: any[] = [
   {
     id: 1,
     name: 'Image Filter',
-    summary: 'An image manipulation application written in C++.',
+    summary: 'An image manipulation application written in C++',
     description:
       '<p>A C++ application using the OpenCV and Magick++ libraries to manipulate image files. Currently capable of' +
       ' neon-laser outline, laser-etched wood, and glass-cut effects.</p>',
@@ -17,8 +17,8 @@ export const projects: any[] = [
   },
   {
     id: 5,
-    name: 'Commander Recommendation System',
-    summary: 'Angular web application to recommend EDH Commanders',
+    name: 'Commander Recommendation Application',
+    summary: 'Angular CLI app for recommending EDH Commanders',
     description: '<p>Angular web application for recommending EDH Commanders to build. Uses market-basket analysis on user submitted' +
       ' decks and find external decks with the greatest commonality. Stores data in a Postgres db accessible with a custom made API.</p>',
     thumbnail: 'assets/thumbnails/commanderdash.png',
@@ -44,7 +44,7 @@ export const projects: any[] = [
   {
     id: 4,
     name: 'Home Lab',
-    summary: 'A home server running Proxmox.',
+    summary: 'A home server running Proxmox',
     description: '<p>A Dell r710 running Proxmox hosting 14 VMs and over 30 Docker containers. Routes home internet using pfSense. ' +
       'Hosts a BitWarden password manager, BookStacks wiki, NextCloud storage, and a set of DBMS\'s.</p>',
     thumbnail: 'assets/thumbnails/proxmox_thumbnail.png',
