@@ -107,7 +107,7 @@ export const projects: any[] = [
     id: 7,
     name: 'CAD Projects',
     summary: 'Misc Designs',
-    description: '<p>Just a quick look at some of my designs. Most are upgrades for my printers, or ' +
+    description: '<p>A fairly random variety of designs. Most are upgrades for my printers, or ' +
       'mods on others\' upgrades. For more information, check out my Thingiverse page.</p>',
     thumbnail: 'assets/thumbnails/cad_thumb.png',
     images: [
@@ -118,7 +118,7 @@ export const projects: any[] = [
       'assets/projects/cad/qidi_hydra.png',
       'assets/projects/cad/x_smart.png',
     ],
-    source: '',
+    source: 'Thingiverse',
   },
   {
       id: 8,
