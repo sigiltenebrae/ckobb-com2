@@ -4,7 +4,7 @@
   </div>
   <div fxFlex="100" fxLayout="row wrap" fxLayoutAlign="center" >
     <div *ngFor="let project of projects; let i = index" fxLayout="column">
-      <mat-card class="project-viewer" matRipple [matRippleCentered]="false" [class.mat-elevation-z3]="true">
+      <mat-card (click)="project.hovered=true; project.unclose=true" class="project-viewer" matRipple [matRippleCentered]="false" [class.mat-elevation-z3]="true">
         <!--<div class="project-thumbnail-holder" [ngClass]="{
         'project-thumbnail-holder': !project.hovered,
         'project-thumbnail-holder-closed': project.hovered,
@@ -16,7 +16,7 @@
       'project-thumbnail-holder': true,
       'project-thumbnail-holder-closed': project.hovered,
       'project-thumbnail-holder-unclose': project.unclose
-      }" (click)="project.hovered=!project.hovered; project.unclose=!project.unclose">
+      }">
           <img class="project-thumbnail" src="{{project.thumbnail}}" alt="{{project.name}}">
         </div>
         <!--<img class="project-thumbnail project-thumbnail-back"
@@ -24,7 +24,6 @@
              (mouseleave)="project.hovered=false; project.unclose=true; project.unopen=false;"
              src="{{project.thumbnail}}" alt="{{project.name}}">-->
         <img class="project-thumbnail project-thumbnail-back"
-             (click)="project.hovered=!project.hovered; project.unclose=!project.unclose"
              src="{{project.thumbnail}}" alt="{{project.name}}">
         <h3 [ngClass]="{'project-name': !project.hovered, 'project-name-centered': project.hovered}">
           {{project.name}}
