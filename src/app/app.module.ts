@@ -45,6 +45,8 @@ import { ProjectsComponent } from './projects/projects.component';
     MatListModule,
     MatSidenavModule,
     MatToolbarModule,
+    MatCardModule,
+    MatRippleModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

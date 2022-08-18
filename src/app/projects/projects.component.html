@@ -1,1 +1,19 @@
-<p>projects works!</p>
+<div fxFlex="100" fxLayout="row wrap" fxLayoutAlign="center" style="margin: 20px">
+  <div *ngFor="let project of projects; let i = index" fxLayout="column">
+    <mat-card class="project-viewer" matRipple [matRippleCentered]="false" [class.mat-elevation-z3]="true">
+      <div class="project-thumbnail-holder" [ngClass]="{
+      'project-thumbnail-holder': !project.hovered,
+      'project-thumbnail-holder-closed': project.hovered,
+      'project-thumbnail-holder-unclose': project.unclose,
+      'project-thumbnail-holder-unopen': project.unopen
+      }" (mouseleave)="project.unopen=true; project.unclose=false;"
+        (mouseenter)="project.unclose=false; project.unopen=false;">
+        <img class="project-thumbnail" src="{{project.thumbnail}}" alt="{{project.name}}">
+      </div>
+      <img class="project-thumbnail project-thumbnail-back"
+           (mouseenter)="project.hovered = true; project.unclose=false; project.unopen=false;"
+           (mouseleave)="project.hovered=false; project.unclose=true; project.unopen=false;"
+           src="{{project.thumbnail}}" alt="{{project.name}}">
+    </mat-card>
+  </div>
+</div>
