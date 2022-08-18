@@ -25,11 +25,13 @@ import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 
 import { AppComponent } from './app.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { AboutMeComponent } from './about-me/about-me.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    AboutMeComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +40,8 @@ import { ProjectsComponent } from './projects/projects.component';
     FlexLayoutModule,
     RouterModule.forRoot([
       {path: '', redirectTo: 'projects', pathMatch: 'full'},
-      {path: 'projects', component: ProjectsComponent}
+      {path: 'projects', component: ProjectsComponent},
+      {path: 'about', component: AboutMeComponent}
     ]),
     MatButtonModule,
     MatIconModule,

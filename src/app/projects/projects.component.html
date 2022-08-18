@@ -32,7 +32,7 @@
         <p *ngIf="!project.hovered" class="project-summary">{{project.summary}}</p>
         <div *ngIf="project.hovered" [innerHTML]="project.description" class="project-description"></div>
         <div *ngIf="project.hovered && project.source && project.source !== ''" class="project-source-button" >
-          <button mat-raised-button color="primary"><a style="text-decoration: none" href="{{project.source}}" target="_blank">Source</a></button>
+          <button mat-raised-button color="primary"><a style="text-decoration: none; color: white" href="{{project.source}}" target="_blank">Source</a></button>
         </div>
       </mat-card>
     </div>
