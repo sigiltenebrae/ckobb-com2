@@ -63,7 +63,7 @@ export const projects: any[] = [
     description: '<p>An ACID compliant DBMS capable of handling variable-length records and B+ Tree parsing. ' +
       'Implements a page buffer for faster access time and writes all data to disk for persistent storage. Written in ' +
       'Java.</p>',
-    thumbnail: '',
+    thumbnail: 'assets/projects/dbms/dbms.png',
     images: [],
     source: '',
   },
